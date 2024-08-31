@@ -14,7 +14,7 @@ export default function Product() {
                         Futurity-charge your portfolio valuations with Futurity’s software and enhanced services.
                     </h2>
                     <div className="flex justify-center items-center mt-4">
-                       <GreyButton Content={`Request Demo`}/>
+                        <GreyButton Content={`Request Demo`} />
                     </div>
                 </div>
                 {/* Right Side Content */}
@@ -46,9 +46,9 @@ export default function Product() {
                         {/* Understanding */}
                         <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105 relative z-10">
                             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6">
-                                <div className="text-2xl font-bold text-blue-500">1</div>
+                                {/* <div className="text-2xl font-bold text-blue-500">1</div> */}
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Understanding</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-4"><span className=''>1. </span><span>Understanding</span></h3>
                             <p className="text-gray-700 mb-3">1. Understanding the objective of the Engagement.</p>
                             <p className="text-gray-700 mb-3">2. Understanding the underlying asset/business.</p>
                             <p className="text-gray-700">3. Understand underlying compliance requirements and regulations.</p>
@@ -57,9 +57,9 @@ export default function Product() {
                         {/* Appropriate Information */}
                         <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105 relative z-10">
                             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6">
-                                <div className="text-2xl font-bold text-green-500">2</div>
+                                {/* <div className="text-2xl font-bold text-green-500">2</div> */}
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Appropriate Information</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">2. Appropriate Information</h3>
                             <p className="text-gray-700 mb-3">1. Obtain client-specific information.</p>
                             <p className="text-gray-700 mb-3">2. Obtain external information.</p>
                             <p className="text-gray-700 mb-3">3. In-house industry research reports.</p>
@@ -69,9 +69,9 @@ export default function Product() {
                         {/* Analysis & Discussions */}
                         <div className="flex flex-col items-center bg-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105 relative z-10">
                             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-6">
-                                <div className="text-2xl font-bold text-red-500">3</div>
+                                {/* <div className="text-2xl font-bold text-red-500">3</div> */}
                             </div>
-                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Analysis & Discussions</h3>
+                            <h3 className="text-2xl font-semibold text-gray-800 mb-4">3. Analysis & Discussions</h3>
                             <p className="text-gray-700 mb-3">1. Review information.</p>
                             <p className="text-gray-700 mb-3">2. Benchmarking.</p>
                             <p className="text-gray-700 mb-3">3. FIT analysis.</p>

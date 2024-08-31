@@ -3,7 +3,8 @@ import Women from '../../assets/women.jpg'
 import Compliance from '../../assets/Compliance.png'
 import Valuation from '../../assets/Valuation.png'
 import Consulting from '../../assets/Consulting.png'
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import GreyButton from '../buttons/GreyButton'
 
 export default function Services() {
 
@@ -65,13 +66,10 @@ export default function Services() {
                 </div>
             </div>
 
-
-            {/* lower section */}
-
             <div className='mt-10'>
-                <h2 className="text-center text-2xl font-bold text-gray-700 mb-6">Scalar specializes in the following areas</h2>
+                <h2 className="text-center text-2xl font-bold text-gray-700 mb-6">Futurity specializes in the following areas</h2>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 md:px-0 lg:px-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-4 md:px-0 lg:px-4 container mx-auto ">
                     {services.map((service, index) => (
                         <div key={index} className="flex flex-col items-center bg-gray-100 p-2 rounded-lg shadow-md">
                             <img src={service.image} alt={service.name} className="w-full h-32 object-contain rounded-md mb-2 hover:scale-110" />
@@ -84,13 +82,8 @@ export default function Services() {
             <div className='mt-10'>
                 <h2 className='text-center text-2xl font-bold text-gray-700 mb-6'>Ready to move forward?</h2>
                 <div className="flex justify-center items-center">
-                <button
-                    onClick={handleClick}
-                    className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
-                >
-                    Contact Us
-                </button>
-            </div>
+                    <GreyButton Content={`Contact Us`} onClick={handleClick} />
+                </div>
 
             </div>
         </div>
