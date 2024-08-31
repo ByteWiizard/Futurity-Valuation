@@ -1,6 +1,7 @@
 import React from 'react';
 import Productimage from '../../assets/product.jpg';
 import Faq from './Faq';
+import GreyButton from '../buttons/GreyButton';
 
 export default function Product() {
     return (
@@ -13,11 +14,7 @@ export default function Product() {
                         Futurity-charge your portfolio valuations with Futurity’s software and enhanced services.
                     </h2>
                     <div className="flex justify-center items-center mt-4">
-                        <button
-                            className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
-                        >
-                            Request A Demo
-                        </button>
+                       <GreyButton Content={`Request Demo`}/>
                     </div>
                 </div>
                 {/* Right Side Content */}

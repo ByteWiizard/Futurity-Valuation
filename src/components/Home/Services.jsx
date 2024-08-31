@@ -3,6 +3,7 @@ import Compliance from '../../assets/Compliance.png'
 import Valuation from '../../assets/Valuation.png'
 import Consulting from '../../assets/Consulting.png'
 import { Link, useNavigate } from 'react-router-dom';
+import GreyButton from '../buttons/GreyButton';
 
 
 const Services = () => {
@@ -69,12 +70,7 @@ const Services = () => {
             </div>
 
             <div className="flex justify-center items-center">
-                <button
-                    onClick={handleClick}
-                    className="font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500"
-                >
-                    Learn More
-                </button>
+                <GreyButton Content={'Learn More'} onClick={handleClick}/>
             </div>
         </div>
     )

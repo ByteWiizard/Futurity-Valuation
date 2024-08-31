@@ -1,11 +1,16 @@
 import React from 'react'
 import Lottie from 'lottie-react';
 import animationData from '../../assets/Animation - 1724827126639.json';
-
+import GreyButton from '../buttons/GreyButton';
+import { useNavigate } from 'react-router-dom';
 const Hero = () => {
+
+    const navigate = useNavigate();
+    function OnClick() {
+        navigate('/contact');
+    }
     return (
         <div className='flex flex-col justify-center text-center items-center h-[400px] md:h-[700px]'>
-            {/* style={{ width: 600, height: 600 }} */}
             <div className="block md:hidden">
                 <Lottie animationData={animationData} loop={true} style={{
                     width: 300,
@@ -19,9 +24,7 @@ const Hero = () => {
 
                 }} />
             </div>
-            <button className='font-bold text-xl text-white hover:text-black px-3 py-3 bg-gray-700 hover:bg-gray-200 rounded-lg transform duration-500'>
-                Let's Connect
-            </button>
+            <GreyButton Content={`Let's Connect`} onClick={OnClick} />
         </div>
     )
 }
