@@ -110,17 +110,6 @@ const Navbar = () => {
                                 Contact
                             </a>
                         </li>
-                        {/* Additional Items for Laptop View */}
-                        <li>
-                            <a href="/blog" className="py-2 px-3 hover:underline">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/faq" className="py-2 px-3 hover:underline">
-                                FAQ
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
